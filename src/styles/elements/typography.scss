@@ -5,46 +5,41 @@
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+p {
     font-family: var(--font-primary);
-    line-height: 1;
-    font-weight: bold;
+    line-height: 1.25;
+
+    color: var(--color-white);
 
     margin: 0;
 }
 
-h1 {
-    font-size: var(--font-size-h1);
-    margin-top: 0;
-    color: var(--color-primary);
+.display {
+    font-size: var(--font-size-display);
+    font-weight: 900;
+}
+
+.display-light {
+    font-size: var(--font-size-display);
+    font-weight: 200;
 }
 
 h2 {
     font-size: var(--font-size-h2);
-    font-family: var(--font-secondary);
-    color: var(--color-primary);
+    font-weight: 900;
 }
 
 h3 {
     font-size: var(--font-size-h3);
-    font-weight: 500;
-}
-
-h4 {
-    font-size: var(--font-size-h3);
-}
-
-h5 {
-    font-size: var(--font-size-h5);
-}
-
-h6 {
-    font-size: var(--font-size-h6);
+    font-weight: 700;
 }
 
 p {
-    margin: 0;
     font-size: var(--font-size-content);
+}
+
+.p__bold {
+    font-size: var(--font-size-content);
+    font-weight: 700;
+    text-decoration: underline;
 }
