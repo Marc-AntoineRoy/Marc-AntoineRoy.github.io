@@ -30,17 +30,22 @@ h2,
     font-weight: 900;
 }
 
+.h2 {
+    text-transform: lowercase;
+}
+
 h3 {
     font-size: var(--font-size-h3);
     font-weight: 700;
 }
 
 p {
-    font-size: var(--font-size-content);
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-p);
 }
 
 .p__bold {
-    font-size: var(--font-size-content);
+    font-size: var(--font-size-p);
     font-weight: 700;
     text-decoration: underline;
 }

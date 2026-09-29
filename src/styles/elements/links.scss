@@ -4,25 +4,30 @@
    ========================================================================== */
 
 a {
+    font-family: var(--font-secondary);
     color: var(--color-primary);
     text-decoration: none;
 
     &:hover {
-        color: var(--color-primary);
-        text-decoration: underline;
+        text-decoration: underline var(--color-secondary) 3px;
     }
 
     &.disabled {
         color: #e2e2e2;
     }
 }
+
+/* button */
 .button {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
 
+    position: relative;
+
     width: 400px;
+    height: 60px;
 
     flex-shrink: 0;
 
@@ -33,19 +38,34 @@ a {
         text-transform: uppercase;
 
         padding: 4px 8px;
+
+        z-index: 10;
     }
 
     span {
+        position: absolute;
+        top: 0;
         width: 100%;
         height: 25px;
+        z-index: 1;
+
         background: var(--color-primary);
+
+        transition: all 0.2s $ease-out-expo;
     }
 
     &:hover {
         text-decoration: none;
 
+        h3 {
+            color: var(--color-white);
+        }
+
         span {
-            transform: rotate();
+            transform: rotate(-4deg);
+            height: 60px;
+
+            background: var(--color-secondary);
         }
     }
 }

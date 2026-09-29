@@ -1,0 +1,15 @@
+/* ==========================================================================
+   section /
+   padding : 80px 120px; 
+   ========================================================================== */
+
+.section {
+    .wrapper {
+        padding: 80px 120px;
+    }
+}
+.background {
+    // modifier avec gsap pour faire un delayed scroll
+    position: absolute;
+    z-index: -10;
+}
