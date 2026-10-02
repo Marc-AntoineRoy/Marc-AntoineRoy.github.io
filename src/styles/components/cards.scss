@@ -36,4 +36,13 @@
         position: absolute;
         z-index: 0;
     }
+
+    .logiciels {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+        margin-bottom: 10px;
+    }
 }
