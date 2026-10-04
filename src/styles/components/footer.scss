@@ -1,3 +1,101 @@
 /* ==========================================================================
    footer / 
    ========================================================================== */
+
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+
+    .wrapper {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 80px 120px;
+        gap: 10px;
+    }
+
+    .top {
+        z-index: 10;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        width: 100%;
+
+        .p__bold {
+            color: var(--color-white);
+        }
+    }
+
+    .footer__infos__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 25px;
+
+        .footer__info__card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            padding: 10px 0;
+            gap: 10px;
+            width: 50%;
+
+            .footer__coord {
+                z-index: 10;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                gap: 5px;
+
+                a {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .nav__plateforme {
+        z-index: 10;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 30px;
+            a {
+                svg {
+                    fill: var(--color-white);
+                }
+                &:hover {
+                    svg {
+                        fill: var(--color-secondary);
+                    }
+                }
+            }
+        }
+
+        @media (width < $breakpoint-sm) {
+            display: none;
+        }
+    }
+
+    .card_pattern {
+        position: absolute;
+
+        height: 400px;
+        bottom: -20px;
+        left: -50px;
+        transform: rotate(100deg);
+    }
+}
