@@ -1,0 +1,1083 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&display=swap");
+/* ==========================================================================
+   cover / tools
+   ========================================================================== */
+/* ==========================================================================
+   cover / typo
+   ========================================================================== */
+/* ==========================================================================
+   COLORS / SETTINGS
+   ========================================================================== */
+:root {
+  --color-white: #fff;
+  --color-neutral: #252525;
+  --color-primary: #070706;
+  --color-secondary: #bf263b;
+  --color-bg-primary: var(--color-neutral);
+  --color-bg-secondary: rgba(7, 7, 6, 32%);
+}
+
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+:root {
+  --font-primary: 'Outfit', sans-serif;
+  --font-secondary: 'Courier Prime', monospace;
+  --font-size-display: clamp(2.25rem, 5vw + 0.75rem, 5.25rem);
+  --font-size-h1: 3rem;
+  --font-size-h2: clamp(2rem, 0.42vw + 1.88rem, 2.25rem);
+  --font-size-h3: clamp(1.25rem, 0.83vw + 1rem, 1.75rem);
+  --font-size-p: 1.25rem;
+}
+
+/* ==========================================================================
+   DIMENSIONS / SETTINGS
+   ========================================================================== */
+:root {
+  --spacing-xs: 1rem;
+  --spacing-sm: 2rem;
+  --spacing-md: 4rem;
+  --spacing-lg: 50px;
+  --spacing-xl: 6rem;
+  --grid-gap: 30px;
+}
+
+/* ==========================================================================
+   easing / settings
+   ========================================================================== */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   RESET / GENERIC
+   ========================================================================== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   BODY / ELEMENT
+   Le body permet d'initialiser les propriétés générales de la page.
+   Les éléments de la page vont hérités des propriétés inscrite dans body
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-content);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY / ELEMENT
+   ========================================================================== */
+h1,
+h2,
+h3,
+p {
+  font-family: var(--font-primary);
+  line-height: 1.25;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.display {
+  font-size: var(--font-size-display);
+  font-weight: 900;
+}
+
+.display-light {
+  font-size: var(--font-size-display);
+  font-weight: 200;
+}
+
+h2,
+.h2 {
+  font-size: var(--font-size-h2);
+  font-weight: 900;
+}
+
+.h2 {
+  text-transform: lowercase;
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-p);
+}
+
+.p__bold {
+  font-size: var(--font-size-p);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   LINKS / ELEMENTS
+   Style de base de tous les liens et bouton du site
+   ========================================================================== */
+a {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  -webkit-text-decoration: underline var(--color-secondary) 3px;
+          text-decoration: underline var(--color-secondary) 3px;
+}
+a.disabled {
+  color: #e2e2e2;
+}
+
+/* button */
+/* ==========================================================================
+   WRAPPER / ELEMENT
+   ========================================================================== */
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+@media (width <= 768px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+
+/* ==========================================================================
+   icons / component
+   ========================================================================== */
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 1em;
+  vertical-align: middle;
+  width: 1em;
+  stroke: transparent;
+}
+
+.icon--stroke {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.icon--xs {
+  height: 0.75em;
+  width: 0.75em;
+}
+
+.icon--sm {
+  height: 0.8em;
+  width: 0.8em;
+}
+
+.icon--md {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.icon--lg {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.icon--xl {
+  height: 4em;
+  width: 4em;
+}
+
+/* ==========================================================================
+   hub / 
+   ========================================================================== */
+.hub .wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+.hub__media {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+}
+.hub__media svg {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+}
+
+.hub__content {
+  grid-column: 1/span 8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+.hub__content .nav__hub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.hub__content .nav__hub .hub__links:nth-child(1) {
+  transform: translateX(25px);
+}
+.hub__content .nav__hub .hub__links:nth-child(3) {
+  transform: translateX(-25px);
+}
+
+/* ==========================================================================
+   footer / 
+   ========================================================================== */
+.footer {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.footer .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 120px;
+  gap: 10px;
+}
+.footer .top {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.footer .top .p__bold {
+  color: var(--color-white);
+}
+.footer .footer__infos__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.footer .footer__infos__cards .footer__info__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  gap: 10px;
+  width: 50%;
+}
+.footer .footer__infos__cards .footer__info__card .footer__coord {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+.footer .footer__infos__cards .footer__info__card .footer__coord a {
+  color: var(--color-white);
+}
+.footer .nav__plateforme {
+  z-index: 10;
+}
+.footer .nav__plateforme ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer .nav__plateforme ul a svg {
+  fill: var(--color-white);
+}
+.footer .nav__plateforme ul a:hover svg {
+  fill: var(--color-secondary);
+}
+@media (width < 768px) {
+  .footer .nav__plateforme {
+    display: none;
+  }
+}
+.footer .card_pattern {
+  position: absolute;
+  height: 400px;
+  bottom: -20px;
+  left: -50px;
+  transform: rotate(100deg);
+}
+
+/* ==========================================================================
+   header / 
+   ========================================================================== */
+.header {
+  background: var(--color-primary);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 120px;
+}
+@media (width < 768px) {
+  .header .wrapper {
+    padding: 10px 16px;
+  }
+}
+
+.nav__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav__plateforme ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nav__plateforme ul a svg {
+  fill: var(--color-white);
+}
+.nav__plateforme ul a:hover svg {
+  fill: var(--color-secondary);
+}
+@media (width < 768px) {
+  .nav__plateforme {
+    display: none;
+  }
+}
+
+.nav__principal ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nav__principal ul a {
+  color: var(--color-white);
+}
+@media (width < 768px) {
+  .nav__principal {
+    display: none;
+  }
+}
+
+.header__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+  background: none;
+  border: none;
+}
+.header__toggle span {
+  height: 6px;
+  background: var(--color-white);
+}
+.header__toggle span:nth-child(1) {
+  width: 80px;
+}
+.header__toggle span:nth-child(2) {
+  width: 60px;
+}
+.header__toggle span:nth-child(3) {
+  width: 40px;
+}
+.header__toggle:hover span {
+  background: var(--color-secondary);
+}
+@media (width < 768px) {
+  .header__toggle {
+    display: flex;
+  }
+}
+
+/* règles ul li gén */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* ==========================================================================
+   button / 
+   ========================================================================== */
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  width: 400px;
+  height: 65px;
+  flex-shrink: 0;
+  background: var(--color-white);
+}
+.button h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  padding: 4px 8px;
+  z-index: 10;
+}
+.button span {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  z-index: 1;
+  background: var(--color-primary);
+  transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.button:hover {
+  text-decoration: none;
+}
+.button:hover h3 {
+  color: var(--color-white);
+}
+.button:hover span {
+  transform: rotate(-4deg);
+  height: 65px;
+  background: var(--color-secondary);
+}
+
+/* ==========================================================================
+   a_propos / 
+   ========================================================================== */
+.a_propos .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+.intro .text_card {
+  grid-column: 1/span 8;
+}
+.intro .text_card .card_pattern {
+  right: 25px;
+  transform: rotate(100deg);
+}
+
+/*
+   Cartes d'outils et compétences
+   ========================================================================== */
+.competences {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  gap: 50px;
+}
+.competences .info__card:nth-child(2) {
+  grid-column: -8/-1;
+  align-items: flex-end;
+  z-index: 10;
+}
+.competences .info__card:nth-child(2) .card_pattern {
+  left: 20px;
+  top: -15px;
+  transform: rotate(-100deg) scaley(-1);
+  opacity: 100%;
+}
+.competences .info__card:nth-child(1) {
+  position: absolute;
+  width: 600px;
+  left: 0;
+  background: var(--color-secondary);
+  transform: translateY(-30px);
+}
+.competences .info__card:nth-child(1) .card_pattern {
+  opacity: 50%;
+}
+
+.outils {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  gap: 50px;
+}
+.outils .info__card:nth-child(1) {
+  grid-column: 1/8;
+  align-items: flex-start;
+  z-index: 10;
+}
+.outils .info__card:nth-child(1) .card_pattern {
+  right: 20px;
+  top: -15px;
+  transform: rotate(-100deg) scalexy(-1);
+  opacity: 100%;
+}
+.outils .info__card:nth-child(2) {
+  position: absolute;
+  width: 600px;
+  right: 0;
+  align-items: flex-end;
+  background: var(--color-secondary);
+  transform: translateY(-30px);
+}
+.outils .info__card:nth-child(2) .card_pattern {
+  left: 120px;
+  top: -15px;
+  transform: rotate(-100deg) scaley(-1);
+  opacity: 50%;
+}
+
+.info__cards {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+.info__cards .info__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  grid-column: 1/8;
+  gap: 10px;
+  padding: 10px;
+  background: var(--color-primary);
+}
+.info__cards .info__card li {
+  z-index: 10;
+}
+.info__cards .info__card h2 {
+  z-index: 10;
+}
+.info__cards .info__card .card_pattern {
+  right: 120px;
+  top: -15px;
+  transform: rotate(-100deg);
+}
+.info__cards .info__card svg {
+  fill: var(--color-white);
+}
+.info__cards .info__card .icon-figma {
+  fill: transparent;
+  stroke: var(--color-white);
+}
+
+/*
+   Cartes des intérets
+   ========================================================================== */
+.interets {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.interest__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.interest__cards .interest__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 500px;
+  position: relative;
+}
+.interest__cards .interest__card .interest__media {
+  height: 100%;
+  width: 100%;
+}
+.interest__cards .interest__card .interest__media img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.interest__cards .interest__card .interest__content {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+
+/*
+   Stage
+   ========================================================================== */
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+}
+.stage .card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+.stage .card .text_card {
+  grid-column: -1/-8;
+}
+
+/* ==========================================================================
+   projets / 
+   ========================================================================== */
+.projets .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 80px 120px;
+  gap: 50px;
+}
+.projets .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 150px;
+}
+.projets .cards .card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  width: 100%;
+  position: relative;
+}
+.projets .cards .card .card__content {
+  grid-column: 1/span 7;
+  z-index: 10;
+  overflow: hidden;
+}
+.projets .cards .card .card__content .logiciels,
+.projets .cards .card .card__content .date {
+  margin-left: auto;
+}
+.projets .cards .card .card__content .logiciels svg {
+  fill: var(--color-white);
+}
+.projets .cards .card .card__content .logiciels .icon-figma {
+  fill: transparent;
+  stroke: var(--color-white);
+}
+.projets .cards .card .card__content .date {
+  display: flex;
+  gap: 30px;
+}
+.projets .cards .card .card__content .card_pattern {
+  left: -20px;
+  bottom: 0;
+}
+.projets .cards .card .card__media {
+  position: absolute;
+  right: 0;
+  height: 400px;
+  align-self: center;
+}
+.projets .cards .card .card__media .button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.projets .cards .card:nth-child(even) .card__content {
+  grid-column: 7/span 12;
+}
+.projets .cards .card:nth-child(even) .card__media,
+.projets .cards .card:nth-child(even) .button {
+  left: 0;
+}
+
+/* ==========================================================================
+   cards / carte texte générale
+   ========================================================================== */
+.text_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  padding: 10px;
+  gap: 10px;
+  background: var(--color-primary);
+}
+.text_card .line {
+  height: 2px;
+  width: 100%;
+  background: var(--color-white);
+  z-index: 10;
+}
+.text_card h1,
+.text_card p,
+.text_card h2,
+.text_card .date {
+  z-index: 10;
+}
+.text_card .card_pattern {
+  position: absolute;
+  z-index: 0;
+}
+.text_card .logiciels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   section /
+   padding : 80px 120px; 
+   ========================================================================== */
+.section .wrapper {
+  padding: 80px 120px;
+}
+
+.background {
+  position: absolute;
+  z-index: -10;
+}
+/*# sourceMappingURL=main.css.map */
