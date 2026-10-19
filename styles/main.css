@@ -389,7 +389,6 @@ body {
   font-family: var(--font-secondary);
   font-size: var(--font-size-content);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 /* ==========================================================================
@@ -686,6 +685,7 @@ a.disabled {
   top: 0;
   z-index: 99;
   height: --header-height;
+  overflow: hidden;
 }
 .header .wrapper {
   display: flex;
@@ -697,6 +697,9 @@ a.disabled {
   .header .wrapper {
     padding: 10px 16px;
   }
+}
+.nav-is-active .header {
+  overflow: visible;
 }
 
 .nav__header {
