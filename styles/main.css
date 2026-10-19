@@ -599,6 +599,7 @@ a.disabled {
 .footer {
   background: var(--color-primary);
   color: var(--color-white);
+  overflow: hidden;
 }
 .footer .wrapper {
   position: relative;
