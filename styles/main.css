@@ -389,7 +389,6 @@ body {
   font-family: var(--font-secondary);
   font-size: var(--font-size-content);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 /* ==========================================================================
@@ -600,7 +599,6 @@ a.disabled {
 .footer {
   background: var(--color-primary);
   color: var(--color-white);
-  overflow: hidden;
 }
 .footer .wrapper {
   position: relative;
@@ -686,7 +684,6 @@ a.disabled {
   top: 0;
   z-index: 99;
   height: --header-height;
-  overflow: hidden;
 }
 .header .wrapper {
   display: flex;
@@ -698,9 +695,6 @@ a.disabled {
   .header .wrapper {
     padding: 10px 16px;
   }
-}
-.nav-is-active .header {
-  overflow: visible;
 }
 
 .nav__header {
@@ -1299,9 +1293,6 @@ li {
    section /
    padding : 80px 120px; 
    ========================================================================== */
-.section {
-  overflow: hidden;
-}
 .section .wrapper {
   padding: 80px 120px;
 }
