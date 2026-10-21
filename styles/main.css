@@ -388,7 +388,6 @@ body {
   font-family: var(--font-secondary);
   font-size: var(--font-size-content);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 /* ==========================================================================
@@ -608,6 +607,7 @@ a.disabled {
   align-items: flex-start;
   padding: 80px 120px;
   gap: 10px;
+  overflow: hidden;
 }
 .footer .top {
   z-index: 10;
