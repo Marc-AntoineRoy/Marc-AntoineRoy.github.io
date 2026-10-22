@@ -1188,6 +1188,14 @@ li {
   align-items: center;
   gap: 24px;
   width: 100%;
+
+  &:nth-child(4) {
+    @media (width <= 768px) {
+      .logiciels {
+        white-space: pre-line;
+      }
+    }
+  }
 }
 .projets .cards .card .card__content {
   grid-column: 1/span 7;
