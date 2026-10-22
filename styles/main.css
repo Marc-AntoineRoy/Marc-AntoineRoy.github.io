@@ -693,6 +693,9 @@ a.disabled {
   align-items: center;
   padding: 20px 120px;
 }
+.nav-is-active .header {
+  overflow: visible;
+}
 @media (width <= 768px) {
   .header .wrapper {
     padding: 10px 16px;
