@@ -700,12 +700,6 @@ a.disabled {
   }
 }
 
-@media (width <= 768px) {
-  .header  {
-    overflow: visible;
-    overflow-x: hidden;
-  }
-}
 
 .nav__header {
   display: flex;
