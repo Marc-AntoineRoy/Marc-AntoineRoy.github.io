@@ -529,7 +529,6 @@ a.disabled {
    hub / 
    ========================================================================== */
 .hub {
-  overflow: hidden;
 }
 
    .hub .wrapper {
@@ -548,7 +547,7 @@ a.disabled {
 
 .hub__media {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   right: 0;
   top: 0;
 }
@@ -565,6 +564,8 @@ a.disabled {
   align-items: flex-start;
   gap: 28px;
   padding-top: 80px;
+
+  z-index: 10;
 }
 .hub__content .nav__hub {
   display: flex;
@@ -690,7 +691,7 @@ a.disabled {
   position: sticky;
   top: 0;
   z-index: 99;
-  height: 72px;
+  height: 75px;
 }
 .header .wrapper {
   display: flex;
@@ -735,7 +736,7 @@ a.disabled {
     flex-direction: column;
     width: 100%;
     left: 0;
-    top: 72px;
+    top: 75px;
     padding: 25px;
     z-index: -1;
   }
