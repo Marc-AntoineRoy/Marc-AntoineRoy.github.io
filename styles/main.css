@@ -914,6 +914,8 @@ li {
   display: flex;
   flex-direction: column;
   gap: 80px;
+
+  background-color: var(--color-bg-secondary);
 }
 
 .intro {
@@ -1178,6 +1180,9 @@ li {
 /* ==========================================================================
    projets / 
    ========================================================================== */
+.projets {
+  background: var(--color-bg-secondary);
+}
 .projets .wrapper {
   display: flex;
   flex-direction: column;
@@ -1332,7 +1337,6 @@ li {
 .section {
   overflow-x: hidden;
 
-  background: var(--color-bg-secondary);
 }
 .section .wrapper {
   padding: 80px 120px;
