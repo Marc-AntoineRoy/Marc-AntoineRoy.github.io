@@ -1202,6 +1202,9 @@ li {
 }
 .projets .cards .card .card__content .logiciels {
   z-index: 10;
+
+  width: 100%;
+  height: fit-content;
 }
 .projets .cards .card .card__content .logiciels svg {
   fill: var(--color-white);
