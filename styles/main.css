@@ -913,7 +913,6 @@ li {
   flex-direction: column;
   gap: 80px;
 
-  background: var(--color-bg-secondary);
 }
 
 .intro {
@@ -1178,9 +1177,6 @@ li {
 /* ==========================================================================
    projets / 
    ========================================================================== */
-.projets {
-  background: var(--color-bg-secondary);
-}
 .projets .wrapper {
   display: flex;
   flex-direction: column;
