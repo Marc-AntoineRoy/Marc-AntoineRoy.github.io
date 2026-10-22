@@ -1321,7 +1321,7 @@ li {
    padding : 80px 120px; 
    ========================================================================== */
 .section {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .section .wrapper {
   padding: 80px 120px;
