@@ -531,7 +531,6 @@ a.disabled {
 .hub {
   overflow: hidden;
 
-  background: var(--color-neutral);
   }
 
    .hub .wrapper {
