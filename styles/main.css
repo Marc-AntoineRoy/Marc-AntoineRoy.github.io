@@ -529,7 +529,10 @@ a.disabled {
    hub / 
    ========================================================================== */
 .hub {
-}
+  overflow: hidden;
+
+  background-color: var(--color-neutral);
+  }
 
    .hub .wrapper {
   display: grid;
@@ -1328,6 +1331,8 @@ li {
    ========================================================================== */
 .section {
   overflow-x: hidden;
+
+  background: var(--color-bg-secondary);
 }
 .section .wrapper {
   padding: 80px 120px;
