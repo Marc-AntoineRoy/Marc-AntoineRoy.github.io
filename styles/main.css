@@ -687,7 +687,7 @@ a.disabled {
   top: 0;
   z-index: 99;
   height: --header-height;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .header .wrapper {
   display: flex;
@@ -698,11 +698,6 @@ a.disabled {
 @media (width <= 768px) {
   .header .wrapper {
     padding: 10px 16px;
-  }
-}
-@media (width <= 768px) {
-  .header {
-    overflow: visible;
   }
 }
 
