@@ -1246,6 +1246,8 @@ li {
     justify-content: center;
     align-items: center;
     gap: 0;
+
+    width: 100%;
   }
   .projets .cards .card .card__media {
     width: 100%;
