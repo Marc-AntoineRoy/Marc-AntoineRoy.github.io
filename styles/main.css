@@ -550,7 +550,7 @@ a.disabled {
 
 .hub__media {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   right: 0;
   top: 0;
 }
@@ -568,7 +568,6 @@ a.disabled {
   gap: 28px;
   padding-top: 80px;
 
-  z-index: 10;
 }
 .hub__content .nav__hub {
   display: flex;
