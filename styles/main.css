@@ -721,7 +721,7 @@ a.disabled {
     flex-direction: column;
     width: 100%;
     left: 0;
-    top: var(--header-height);
+    top: 72px;
     padding: 25px;
     z-index: -1;
   }
