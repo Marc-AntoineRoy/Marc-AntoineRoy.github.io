@@ -681,12 +681,11 @@ a.disabled {
    header / 
    ========================================================================== */
 .header {
-  --header-height: 72px;
   background: var(--color-primary);
   position: sticky;
   top: 0;
   z-index: 99;
-  height: --header-height;
+  height: 72px;
   overflow-x: hidden;
 }
 .header .wrapper {
