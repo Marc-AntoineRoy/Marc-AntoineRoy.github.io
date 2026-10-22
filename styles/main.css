@@ -531,7 +531,7 @@ a.disabled {
 .hub {
   overflow: hidden;
 
-  background-color: var(--color-neutral);
+  background: var(--color-neutral);
   }
 
    .hub .wrapper {
@@ -915,7 +915,7 @@ li {
   flex-direction: column;
   gap: 80px;
 
-  background-color: var(--color-bg-secondary);
+  background: var(--color-bg-secondary);
 }
 
 .intro {
