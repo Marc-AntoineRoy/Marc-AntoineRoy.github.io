@@ -529,7 +529,7 @@ a.disabled {
    hub / 
    ========================================================================== */
 .hub {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
    .hub .wrapper {
