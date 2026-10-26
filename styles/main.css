@@ -538,7 +538,7 @@ a.disabled {
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
   position: relative;
-  padding-top: 84px;
+  margin-top: 84px;
 }
 @media (width <= 768px) {
   .hub .wrapper {
