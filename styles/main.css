@@ -684,10 +684,11 @@ a.disabled {
    ========================================================================== */
 .header {
   background: var(--color-primary);
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 99;
-  height: 75px;
+  z-index: 999;
+  height: 84px;
+  width: 100%;
 }
 .header .wrapper {
   display: flex;
@@ -733,7 +734,7 @@ a.disabled {
     flex-direction: column;
     width: 100%;
     left: 0;
-    top: 75px;
+    top: 84px;
     padding: 25px;
     z-index: -1;
   }

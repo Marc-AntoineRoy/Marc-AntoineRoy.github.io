@@ -11,7 +11,7 @@
     <script src="scripts/main.js" defer></script>
 </head>
 
-<body data-component="Scrolly" id="smooth-wrapper">
+<body data-component="Scrolly" >
     <header class="header" data-component="Header">
         <div class="wrapper">
             <a href="#hub" class="logo">
@@ -60,8 +60,10 @@
             </button>
         </div>
     </header>
-    <div class="background" id="smooth-content">
-        <img src="assets/icons/background.svg" alt=""  />
+    <div class="background" id="smooth-wrapper" data-component="Scroller">
+        <div class="image" id="smooth-content">
+            <img src="assets/icons/background.svg" alt="" />
+        </div>
     </div>
     <!-- hub ------------------------------------------------------------------------------------- -->
     <section class="hub section" id="hub">
