@@ -949,6 +949,7 @@ li {
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
   width: 100%;
+  
 }
 .info__cards .info__card {
   display: flex;
@@ -958,6 +959,7 @@ li {
   grid-column: 1/8;
   gap: 10px;
   padding: 10px;
+  padding-bottom: 20px;
   background: var(--color-primary);
 }
 .info__cards .info__card li {
@@ -977,6 +979,9 @@ li {
 .info__cards .info__card .icon-figma {
   fill: transparent;
   stroke: var(--color-white);
+}
+.icon-photoshop {
+  border-radius: 10px;
 }
 @media (width <= 768px) {
   .info__cards {
