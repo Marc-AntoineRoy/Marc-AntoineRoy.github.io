@@ -547,12 +547,26 @@ a.disabled {
   }
 }
 
+.wrapper {
+  position: relative;
+}
+
 .hub__media {
   position: absolute;
   z-index: 1;
-  right: 0;
-  top: 0;
+  right: 120px;
+  top: 84px;
 }
+@media (width <= 768px) {
+  .hub__media {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+
+  top: 84px;
+}
+}
+
 .hub__media svg {
   position: absolute;
   height: 400px;
@@ -908,6 +922,8 @@ li {
   display: flex;
   flex-direction: column;
   gap: 80px;
+
+  z-index: 10;
 }
 
 .intro {
