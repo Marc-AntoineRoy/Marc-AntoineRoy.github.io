@@ -1288,6 +1288,7 @@ li {
 @media (width <= 768px) {
   .projets .cards {
     gap: 0;
+    width: 100%;
   }
 }
 
