@@ -1357,7 +1357,22 @@ li {
 .background {
   position: absolute;
   z-index: -999;
+  object-fit: cover;
 }
+
+.background {
+  position: absolute;
+  z-index: -999;
+}
+
+.background img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
 
 .line {
   height: 2px;
