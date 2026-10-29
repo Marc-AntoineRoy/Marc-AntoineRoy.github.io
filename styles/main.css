@@ -823,7 +823,7 @@ a.disabled {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 16px;
+  gap: 8px;
   background: none;
   border: none;
 }
