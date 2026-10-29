@@ -720,6 +720,7 @@ a.disabled {
   justify-content: space-between;
   align-items: center;
   padding: 20px 120px;
+  height: 100%;
 }
 @media (width <= 768px) {
   .header .wrapper {
