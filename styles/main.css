@@ -828,26 +828,26 @@ a.disabled {
   border: none;
 }
 .header__toggle span {
-  height: 6px;
+  height: 8px;
   background: var(--color-white);
 }
 .header__toggle span:nth-child(1) {
-  width: 80px;
+  width: 60px;
 }
 .header__toggle span:nth-child(2) {
-  width: 60px;
+  width: 40px;
   transition: all 0.67s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .nav-is-active .header__toggle span:nth-child(2) {
-  width: 80px;
+  width: 60px;
 }
 .header__toggle span:nth-child(3) {
-  width: 40px;
+  width: 20px;
   transition: all 0.67s cubic-bezier(0.19, 1, 0.22, 1);
   transition-delay: 0.1s;
 }
 .nav-is-active .header__toggle span:nth-child(3) {
-  width: 80px;
+  width: 60px;
 }
 .header__toggle:hover span {
   background: var(--color-secondary);
