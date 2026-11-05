@@ -1476,3 +1476,7 @@ li {
 .page {
   margin-top: 84px;
 }
+
+.page_fourofoor {
+  overflow: hidden;
+}
