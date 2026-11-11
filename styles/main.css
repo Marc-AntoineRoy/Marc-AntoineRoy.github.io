@@ -1475,8 +1475,22 @@ li {
 
 .page {
   margin-top: 84px;
+  
+  position: relative;
 }
 
-.page_fourofoor {
-  overflow: hidden;
+.page .button {
+  margin-top: 20px;
+}
+
+.page .background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
