@@ -1477,6 +1477,7 @@ li {
   margin-top: 84px;
   
   position: relative;
+  z-index: -1;
 }
 
 .page .button {
@@ -1493,4 +1494,5 @@ li {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -10;
 }
